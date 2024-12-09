@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Interactive Weather Forecast</h1>
+    </header>
+    <main>
+      <section id="search">
+        <input type="text" id="city" placeholder="Enter city name">
+        <button id="searchBtn">Search</button>        
+      </section>
+
+      <section id="weather">
+        <div id="current-weather">
+          <h2>Current Weather</h2>
+          <p id="location"></p>
+          <p id="temperature"></p>
+          <p id="description"></p>
+        </div>
+        
+        <section id="map-section">
+          <h2>Location Map</h2>
+          <div id="map" class="map-container"></div>
+        </section>
+
+        <div id="forecast">
+          <h2>5-Day Forecast</h2>
+          <div id="forecast-cards"></div>
+        </div>
+        
+
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
